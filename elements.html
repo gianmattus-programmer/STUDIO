@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Las 4 etiquetas meta anteriores deben ir primero en el encabezado; cualquier otro contenido debe ir después -->
+
+    <!-- Título -->
+    <title>INSTANTE | Elementos</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Estilos responsivos -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/> 
+     
+</head>
+
+<body>
+    <!-- Precargador -->
+    <div id="preloader">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+            </div>
+        </div>
+        <div class="questions-area text-center">
+            <p>¿Sabías que?</p>
+            <ul>
+                <li>El concurso de fotografía más grande del mundo tuvo 353,768 participantes.</li>
+                <li>La fotografía es una de las profesiones más exigentes del mundo.</li>
+                <li>El álbum de fotos más grande del mundo medía 4.25 x 5.18 metros.</li>
+                <li>El mosaico fotográfico más grande del mundo estaba compuesto por 176,175 imágenes.</li>
+                <li>El lente de cámara más grande del mundo tenía una distancia focal de 5200 mm y fue acoplado a una cámara Canon.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Superposición de fondo degradado -->
+    <div class="gradient-background-overlay"></div>
+
+    <!-- Inicio del encabezado -->
+    <header class="header-area bg-img" style="background-image: url(img/bg-img/14.jpg);">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 h-100">
+                    <div class="main-menu h-100">
+                        <nav class="navbar h-100 navbar-expand-lg">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt="Logo"></a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Alternar navegación"><i class="fa fa-bars"></i> Menú</button>
+
+                            <div class="collapse navbar-collapse" id="studioMenu">
+                                <!-- Menú -->
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(actual)</span></a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="index.html">Inicio</a>
+                                            <a class="dropdown-item" href="about-me.html">Acerca de mí</a>
+                                            <a class="dropdown-item" href="portfolio.html">Portafolio</a>
+                                            <a class="dropdown-item" href="blog.html">Blog</a>
+                                            <a class="dropdown-item" href="contact.html">Contacto</a>
+                                            <a class="dropdown-item" href="elements.html">Elementos</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about-me.html">Acerca de mí</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="portfolio.html">Portafolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contacto</a>
+                                    </li>
+                                </ul>
+                                <!-- Formulario de búsqueda -->
+                                <div class="header-search-form ml-auto">
+                                    <form action="#">
+                                        <input type="search" class="form-control" placeholder="Escriba su búsqueda y presione enter..." id="search" name="search">
+                                        <input class="d-none" type="submit" value="Buscar">
+                                    </form>
+                                </div>
+                                <!-- Botón de búsqueda -->
+                                <div id="searchbtn">
+                                    <img src="img/core-img/search.png" alt="Buscar">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fin del encabezado -->
+
+    <!-- Área de Barra Lateral Social Inicio -->
+    <div class="social-sidebar-area">
+        <!-- Área Social -->
+        <div class="social-info-area">
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i> <span>Facebook</span></a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i> <span>Twitter</span></a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i> <span>Pinterest</span></a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i> <span>Behance</span></a>
+        </div>
+    </div>
+    <!-- Área de Barra Lateral Social Fin -->
+
+    <!-- ***** Área de Elementos Inicio ***** -->
+    <section class="elements-area section_padding_100 mt-100">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- ========== Barras de Progreso & Acordeones ========== -->
+                <div class="col-10">
+                    <div class="elements-title">
+                        <h2>Barras de Progreso & Acordeones</h2>
+                    </div>
+                </div>
+
+                <div class="col-10 col-md-5">
+                    <!-- Área de Contenido de Barras de Progreso -->
+                    <div class="services-progress-bar mb-100">
+                        <!-- Barra de Progreso Individual -->
+                        <div class="single_progress_bar">
+                            <div id="bar1" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="80"></span>
+                            </div>
+                            <p>Paciencia</p>
+                        </div>
+                        <!-- Barra de Progreso Individual -->
+                        <div class="single_progress_bar">
+                            <div id="bar2" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="90"></span>
+                            </div>
+                            <p>Creatividad</p>
+                        </div>
+                        <!-- Barra de Progreso Individual -->
+                        <div class="single_progress_bar">
+                            <div id="bar3" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="99"></span>
+                            </div>
+                            <p>Compromiso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-md-5">
+                    <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
+                        <!-- Inicio de un área de acordeón individual -->
+                        <div class="panel single-accordion">
+                            <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">¿Qué puedo decirte sobre mí?
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a></h6>
+                            <div id="collapseOne" class="accordion-content collapse show">
+                                <p>Soy un fotógrafo apasionado por capturar momentos únicos. Me especializo en fotografía de retrato, eventos y paisajes, buscando siempre la mejor composición y luz para cada imagen.</p>
+                            </div>
+                        </div>
+                        <!-- Inicio de un área de acordeón individual -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">¿Por qué necesitas un fotógrafo?
+                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                        </a>
+                            </h6>
+                            <div id="collapseTwo" class="accordion-content collapse">
+                                <p>Un fotógrafo profesional te ayuda a inmortalizar momentos especiales con la mejor calidad posible. Ya sea una boda, un evento corporativo o una sesión de retratos, las fotos capturarán recuerdos que durarán toda la vida.</p>
+                            </div>
+                        </div>
+                        <!-- Inicio de un área de acordeón individual -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">¿Necesito un fotógrafo?
+                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                    </a>
+                            </h6>
+                            <div id="collapseThree" class="accordion-content collapse">
+                                <p>Si quieres imágenes profesionales que cuenten tu historia, la respuesta es sí. Un fotógrafo no solo toma fotos, sino que también se encarga de la iluminación, la edición y la composición para obtener los mejores resultados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ========== Hitos ========== -->
+                <div class="col-10">
+                    <div class="elements-title">
+                        <h2>Hitos</h2>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="studio-cool-facts-area mb-100">
+                        <div class="row">
+                            <!-- Hito Individual -->
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-cool-fact d-flex align-items-center">
+                                    <div class="cool-facts-icon mr-3">
+                                        <img src="img/core-img/gallery.png" alt="">
+                                    </div>
+                                    <div class="counter-area">
+                                        <h2><span class="counter">32</span>k</h2>
+                                        <h6>Fotografías tomadas</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hito Individual -->
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-cool-fact d-flex align-items-center">
+                                    <div class="cool-facts-icon mr-3">
+                                        <img src="img/core-img/favorite.png" alt="">
+                                    </div>
+                                    <div class="counter-area">
+                                        <h2><span class="counter">182</span></h2>
+                                        <h6>Modelos con los que trabajé</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hito Individual -->
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-cool-fact d-flex align-items-center">
+                                    <div class="cool-facts-icon mr-3">
+                                        <img src="img/core-img/photo-camera-2.png" alt="">
+                                    </div>
+                                    <div class="counter-area">
+                                        <h2><span class="counter">217</span></h2>
+                                        <h6>Sesiones de fotos</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hito Individual -->
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-cool-fact d-flex align-items-center">
+                                    <div class="cool-facts-icon mr-3">
+                                        <img src="img/core-img/rocket-launch.png" alt="">
+                                    </div>
+                                    <div class="counter-area">
+                                        <h2><span class="counter">39</span></h2>
+                                        <h6>Premios ganados</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== Cargadores ========== -->
+                <div class="col-10">
+                    <div class="elements-title">
+                        <h2>Marcadores</h2>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <!-- Inicio del Área de Gráficos Circulares -->
+                    <div class="our-skills-area text-center mb-100">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-pie-bar" data-percent="75">
+                                    <canvas class="bar-circle" width="100" height="100"></canvas>
+                                    <h6>Moda</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-pie-bar" data-percent="83">
+                                    <canvas class="bar-circle" width="100" height="100"></canvas>
+                                    <h6>Retratos</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-pie-bar" data-percent="25">
+                                    <canvas class="bar-circle" width="100" height="100"></canvas>
+                                    <h6>Estudio</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="single-pie-bar" data-percent="95">
+                                    <canvas class="bar-circle" width="100" height="100"></canvas>
+                                    <h6>Bodas</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== Cajas de Iconos ========== -->
+                <div class="col-10">
+                    <div class="elements-title">
+                        <h2>Nuestros Servicios</h2>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="features-area">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="single-service-area text-center mb-100">
+                                    <img src="img/core-img/heart.png" alt="">
+                                    <h5>Fotografía de bodas</h5>
+                                    <p>Capturamos los momentos más especiales de tu boda con imágenes llenas de emoción y belleza. Nos enfocamos en los detalles y en los instantes únicos que hacen de tu gran día un recuerdo inolvidable.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="single-service-area text-center mb-100">
+                                    <img src="img/core-img/photo-camera.png" alt="">
+                                    <h5>Fotografía de estudio</h5>
+                                    <p>Realizamos sesiones fotográficas profesionales en un ambiente controlado con iluminación de alta calidad. Ideal para retratos, fotografía de productos o cualquier proyecto que requiera precisión y estética impecable.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="single-service-area text-center">
+                                    <img src="img/core-img/video-camera.png" alt="">
+                                    <h5>Fotografía de retratos</h5>
+                                    <p>Resaltamos la esencia y personalidad de cada persona a través de retratos profesionales. Ya sea en estudio o en exteriores, buscamos capturar la mejor versión de ti con una composición y luz adecuadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Fin del Área de Elementos ***** -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="footer-content h-100 d-md-flex align-items-center justify-content-between">
+                        <!-- Single Footer Content -->
+                        <div class="single-footer-content">
+                            <img src="img/core-img/map.png" alt="">
+                            <a href="#">Av. Lima, Lima</a>
+                        </div>
+                        <!-- Single Footer Content -->
+                        <div class="single-footer-content">
+                            <img src="img/core-img/smartphone.png" alt="">
+                            <a href="#">+51 987654321</a>
+                        </div>
+                        <!-- Single Footer Content -->
+                        <div class="single-footer-content">
+                            <img src="img/core-img/envelope-2.png" alt="">
+                            <a href="#">contacto@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+    
+    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Reservados todos los derechos | Developed and Designed by <a href="https://github.com/gianmattus-programmer" target="_blank">Gianmattus-Programmer</a></p>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>

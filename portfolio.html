@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Las 4 meta etiquetas anteriores *deben* aparecer primero en el head; cualquier otro contenido del head debe venir *después* de estas etiquetas -->
+
+    <!-- Título  -->
+    <title>INSTANTE | Portafolio</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- CSS de Estilo Principal -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Responsivo -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/> 
+
+</head>
+
+<body>
+    <!-- Precargador -->
+    <div id="preloader">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+            </div>
+        </div>
+        <div class="questions-area text-center">
+            <p>¿Sabías que?</p>
+            <ul>
+                <li>La competencia de fotografía más grande tiene 353,768 participantes.</li>
+                <li>La fotografía es la profesión más difícil del mundo.</li>
+                <li>El álbum de fotos más grande del mundo por dimensiones fue de 13 pies 11.5 pulgadas x 17 pies.</li>
+                <li>El mosaico fotográfico más grande del mundo presentó 176,175 imágenes.</li>
+                <li>El lente de cámara más grande del mundo fue un lente de 5200mm acoplado a un canon.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Superposición de Fondo Degradado -->
+    <div class="gradient-background-overlay"></div>
+
+    <!-- Área del Encabezado Inicio -->
+    <header class="header-area bg-img" style="background-image: url(img/bg-img/14.jpg);">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 h-100">
+                    <div class="main-menu h-100">
+                        <nav class="navbar h-100 navbar-expand-lg">
+                            <!-- Área del Logo  -->
+                            <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt="Logo"></a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Alternar navegación"><i class="fa fa-bars"></i> Menú</button>
+
+                            <div class="collapse navbar-collapse" id="studioMenu">
+                                <!-- Área del Menú Inicio  -->
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(actual)</span></a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="index.html">Inicio</a>
+                                            <a class="dropdown-item" href="about-me.html">Acerca de mí</a>
+                                            <a class="dropdown-item" href="portfolio.html">Portafolio</a>
+                                            <a class="dropdown-item" href="blog.html">Blog</a>
+                                            <a class="dropdown-item" href="contact.html">Contacto</a>
+                                            <a class="dropdown-item" href="elements.html">Elementos</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about-me.html">Acerca de mí</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="portfolio.html">Portafolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contacto</a>
+                                    </li>
+                                </ul>
+                                <!-- Formulario de Búsqueda -->
+                                <div class="header-search-form ml-auto">
+                                    <form action="#">
+                                        <input type="search" class="form-control" placeholder="Ingresa tu palabra clave y presiona enter..." id="search" name="search">
+                                        <input class="d-none" type="submit" value="enviar">
+                                    </form>
+                                </div>
+                                <!-- Botón de búsqueda -->
+                                <div id="searchbtn">
+                                    <img src="img/core-img/search.png" alt="">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Área del Encabezado Fin -->
+
+    <!-- Área de la Barra Lateral Social Inicio -->
+    <div class="social-sidebar-area">
+        <!-- Área Social -->
+        <div class="social-info-area">
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i> <span>Facebook</span></a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i> <span>Twitter</span></a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i> <span>Pinterest</span></a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i> <span>Behance</span></a>
+        </div>
+    </div>
+    <!-- Área de la Barra Lateral Social Fin -->
+
+    <!-- Área del Proyecto Inicio -->
+    <div class="gallery_area clearfix">
+        <div class="container-fluid clearfix">
+            <div class="gallery_menu">
+                <div class="portfolio-menu">
+                    <button class="active btn" type="button" data-filter="*">Todos</button>
+                    <button class="btn" type="button" data-filter=".portraits">Retratos</button>
+                    <button class="btn" type="button" data-filter=".weddings">Bodas</button>
+                    <button class="btn" type="button" data-filter=".studio">Estudio</button>
+                    <button class="btn" type="button" data-filter=".fashion">Moda</button>
+                    <button class="btn" type="button" data-filter=".life">Estilo de Vida</button>
+                </div>
+            </div>
+
+            <div class="row portfolio-column">
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item portraits life">
+                    <img src="img/bg-img/p1.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p1.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
+                    <img src="img/bg-img/p2.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p2.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item portraits">
+                    <img src="img/bg-img/p3.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p3.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings life">
+                    <img src="img/bg-img/p4.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p4.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
+                    <img src="img/bg-img/p5.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p5.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item portraits">
+                    <img src="img/bg-img/p6.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p6.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
+                    <img src="img/bg-img/p7.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p7.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio life">
+                    <img src="img/bg-img/p8.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p8.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
+                    <img src="img/bg-img/p9.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p9.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item portraits">
+                    <img src="img/bg-img/p10.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p10.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio life">
+                    <img src="img/bg-img/p11.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p11.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <!-- Elemento Individual -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
+                    <img src="img/bg-img/p12.jpg" alt="">
+                    <div class="hover_overlay">
+                        <a class="gallery_img" href="img/bg-img/p12.jpg"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center mt-70">
+                    <a href="#" class="btn studio-btn"><img src="img/core-img/logo-icon.png" alt=""> Cargar Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Área del Proyecto Fin -->
+
+    <!-- Área del Pie de Página Inicio -->
+    <footer class="footer-area">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="footer-content h-100 d-md-flex align-items-center justify-content-between">
+                        <!-- Contenido Individual del Pie de Página -->
+                        <div class="single-footer-content">
+                            <img src="img/core-img/map.png" alt="">
+                            <a href="#">Av. Lima, Lima</a>
+                        </div>
+                        <!-- Contenido Individual del Pie de Página -->
+                        <div class="single-footer-content">
+                            <img src="img/core-img/smartphone.png" alt="">
+                            <a href="#">+51 987654321</a>
+                        </div>
+                        <!-- Contenido Individual del Pie de Página -->
+                        <div class="single-footer-content">
+                            <img src="img/core-img/envelope-2.png" alt="">
+                            <a href="#">contacto@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Área del Pie de Página Fin -->
+
+    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Reservados todos los derechos | Developed and Designed by <a href="https://github.com/gianmattus-programmer" target="_blank">Gianmattus-Programmer</a></p>
+
+    <!-- jQuery (Necesario para todos los plugins de JavaScript) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>
