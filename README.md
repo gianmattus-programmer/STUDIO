@@ -47,7 +47,7 @@ Apreciamos cualquier tipo de contribución para mejorar este proyecto. Si quiere
 
 ## 👥 Contacto y Autor
 
-Este proyecto es desarrollado y mantenido por [Gian Mattus](https://github.com/gianmattus-programmer). Si tienes alguna consulta o sugerencia, no dudes en contactarme a través de mi perfil de GitHub.
+Este proyecto es desarrollado y mantenido por (https://github.com/gianmattus-programmer). Si tienes alguna consulta o sugerencia, no dudes en contactarme a través de mi perfil de GitHub.
 
 ## ✉️ Licencia
 
